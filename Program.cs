@@ -30,3 +30,19 @@ string[] FilterArray(string[] inputArray) //метод для фильтра з�
 
         return resultArray;
     }
+    
+string[] CreateStringArray(string start) //метод для заполнения массива именами
+{
+    Console.WriteLine(start);
+    string input = Console.ReadLine();
+
+    // Разделение строки на отдельные слова
+    string[] words = input.Split(' ');
+
+    return words;
+}
+
+string[] Names = CreateStringArray("Введите имена через пробел:");
+
+
+
